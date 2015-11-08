@@ -22,6 +22,18 @@
 
 import UIKit
 
+func loadImage()->UIImage?{
+    if let image = (UIImage(named: "rightArrow")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)){
+        return image
+    }
+    if let bundlePath = NSBundle.mainBundle().resourcePath{
+        let bundle = NSBundle(path: bundlePath)
+        return UIImage(named: "rightArrow.png", inBundle: bundle, compatibleWithTraitCollection: nil)?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+    }
+    return nil
+}
+
+
 public class PSCellStyleButton: UIButton {
     
     public var showDisclosureIndicator:Bool = true{
@@ -65,11 +77,12 @@ public class PSCellStyleButton: UIButton {
         }
     }
     
-    public var rightImage: UIImage? = (UIImage(named: "rightArrow")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)){
+    public var rightImage: UIImage? = loadImage(){
         didSet {
             self.setNeedsLayout()
         }
     }
+    
     
     override public func layoutSubviews() {
         super.layoutSubviews()
@@ -101,14 +114,4 @@ public class PSCellStyleButton: UIButton {
         }
     }
     
-    func loadImage()->UIImage?{
-        if let image = (UIImage(named: "rightArrow")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)){
-            return image
-        }
-        if let bundlePath = NSBundle.mainBundle().resourcePath{
-        let bundle = NSBundle(path: bundlePath)
-            return UIImage(named: "rightArrow.png", inBundle: bundle, compatibleWithTraitCollection: nil)?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
-        }
-        return nil
-    }
-}
+   }
