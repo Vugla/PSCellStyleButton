@@ -1,5 +1,5 @@
 # PSCellStyleButton
-Simple UIButton looking similar to UITableVIewCell with separator and disclosure indicator</br>
+Simple UIButton looking similar to UITableVIewCell with separator and disclosure indicator</br></br>
 ![Alt text](/screenshot.png?raw=true)
 ## Installation
 <ul>
