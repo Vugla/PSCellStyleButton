@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'PSCellStyleButton'
-  s.version      = '0.0.1'
+  s.version      = '0.0.2'
   s.summary      = 'Simple UIButton looking similar to UITableVIewCell with separator and disclosure indicator'
   s.homepage         = "https://github.com/Vugla/PSCellStyleButton.git"
   s.license          = 'MIT'
