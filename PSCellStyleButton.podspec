@@ -14,6 +14,7 @@ Pod::Spec.new do |s|
   s.source_files = 'PSCellStyleButton/*.swift'
 s.resources = 'PSCellStyleButton/*.png'
   s.platform     = :ios
+s.ios.deployment_target = '8.0'
   s.requires_arc = true
   s.frameworks = 'UIKit'
 end
