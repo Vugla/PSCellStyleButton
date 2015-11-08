@@ -12,7 +12,9 @@ Pod::Spec.new do |s|
     :tag => s.version.to_s
   }
   s.source_files = 'PSCellStyleButton/*.swift'
-s.resources = 'PSCellStyleButton/*.png'
+s.resource_bundles = {
+    'PSCellStyleButtonResources' => ['PSCellStyleButton/*.png']
+}
   s.platform     = :ios
 s.ios.deployment_target = '8.0'
   s.requires_arc = true

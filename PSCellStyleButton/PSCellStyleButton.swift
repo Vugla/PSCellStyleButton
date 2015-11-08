@@ -26,7 +26,9 @@ func loadImage()->UIImage?{
     if let image = (UIImage(named: "rightArrow")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)){
         return image
     }
-    if let bundlePath = NSBundle.mainBundle().resourcePath{
+    
+    
+    if let bundlePath = NSBundle.mainBundle().pathForResource("PSCellStyleButtonResources", ofType: "bundle"){
         let bundle = NSBundle(path: bundlePath)
         return UIImage(named: "rightArrow.png", inBundle: bundle, compatibleWithTraitCollection: nil)?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
     }
