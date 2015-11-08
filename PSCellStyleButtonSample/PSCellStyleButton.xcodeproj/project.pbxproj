@@ -7,23 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A5DA91E21BEF544900B7C844 /* PSCellStyleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DA91E11BEF544900B7C844 /* PSCellStyleButton.swift */; };
 		A5DA91ED1BEF55A600B7C844 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DA91EA1BEF55A600B7C844 /* ViewController.swift */; };
 		A5DA91EF1BEF55A600B7C844 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DA91EC1BEF55A600B7C844 /* AppDelegate.swift */; };
 		A5DA91F61BEF561600B7C844 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5DA91F41BEF561600B7C844 /* Main.storyboard */; };
 		A5DA91FB1BEF569600B7C844 /* rightArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = A5DA91F91BEF569600B7C844 /* rightArrow.png */; };
 		A5DA91FC1BEF569600B7C844 /* rightArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5DA91FA1BEF569600B7C844 /* rightArrow@2x.png */; };
+		A5DA91FE1BEF580F00B7C844 /* PSCellStyleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DA91FD1BEF580F00B7C844 /* PSCellStyleButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A5A532C61BEEC9C700559D41 /* PSCellStyleButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSCellStyleButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A5DA91E11BEF544900B7C844 /* PSCellStyleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSCellStyleButton.swift; sourceTree = "<group>"; };
 		A5DA91EA1BEF55A600B7C844 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = SOURCE_ROOT; };
 		A5DA91EC1BEF55A600B7C844 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		A5DA91F51BEF561600B7C844 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		A5DA91F71BEF567200B7C844 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		A5DA91F91BEF569600B7C844 /* rightArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rightArrow.png; path = ../rightArrow.png; sourceTree = "<group>"; };
 		A5DA91FA1BEF569600B7C844 /* rightArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rightArrow@2x.png"; path = "../rightArrow@2x.png"; sourceTree = "<group>"; };
+		A5DA91FD1BEF580F00B7C844 /* PSCellStyleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PSCellStyleButton.swift; path = ../PSCellStyleButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,9 +40,9 @@
 		A5A532BD1BEEC9C700559D41 = {
 			isa = PBXGroup;
 			children = (
+				A5DA91FD1BEF580F00B7C844 /* PSCellStyleButton.swift */,
 				A5DA91F91BEF569600B7C844 /* rightArrow.png */,
 				A5DA91FA1BEF569600B7C844 /* rightArrow@2x.png */,
-				A5DA91E11BEF544900B7C844 /* PSCellStyleButton.swift */,
 				A5A532C81BEEC9C700559D41 /* PSCellStyleButtonSample */,
 				A5A532C71BEEC9C700559D41 /* Products */,
 			);
@@ -139,8 +139,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5DA91E21BEF544900B7C844 /* PSCellStyleButton.swift in Sources */,
 				A5DA91ED1BEF55A600B7C844 /* ViewController.swift in Sources */,
+				A5DA91FE1BEF580F00B7C844 /* PSCellStyleButton.swift in Sources */,
 				A5DA91EF1BEF55A600B7C844 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
