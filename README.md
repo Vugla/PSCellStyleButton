@@ -2,9 +2,9 @@
 Simple UIButton looking similar to UITableVIewCell with separator and disclosure indicator</br></br>
 ![Alt text](/screenshot.png?raw=true)
 ## Installation
-<ul>
-<li>Copy PSCellStyleButton into your project</li>
-</ul>
+
+Copy PSCellStyleButton folder into your project
+
 ## How To Use
 In Interface Builder set your button's class to PSCellStyleButton</br></br>
 Properties:
