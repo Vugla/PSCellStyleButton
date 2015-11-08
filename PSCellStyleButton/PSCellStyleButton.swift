@@ -101,4 +101,14 @@ public class PSCellStyleButton: UIButton {
         }
     }
     
+    func loadImage()->UIImage?{
+        if let image = (UIImage(named: "rightArrow")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)){
+            return image
+        }
+        if let bundlePath = NSBundle.mainBundle().resourcePath{
+        let bundle = NSBundle(path: bundlePath)
+            return UIImage(named: "rightArrow.png", inBundle: bundle, compatibleWithTraitCollection: nil)?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+        }
+        return nil
+    }
 }
