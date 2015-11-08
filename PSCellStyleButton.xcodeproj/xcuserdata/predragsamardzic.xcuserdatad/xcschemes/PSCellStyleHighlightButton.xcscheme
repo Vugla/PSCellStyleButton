@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A5A532C51BEEC9C700559D41"
-               BuildableName = "PSCellStyleHighlightButton.app"
-               BlueprintName = "PSCellStyleHighlightButton"
-               ReferencedContainer = "container:PSCellStyleHighlightButton.xcodeproj">
+               BuildableName = "PSCellStyleButton.app"
+               BlueprintName = "PSCellStyleButton"
+               ReferencedContainer = "container:PSCellStyleButton.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A5A532C51BEEC9C700559D41"
-            BuildableName = "PSCellStyleHighlightButton.app"
-            BlueprintName = "PSCellStyleHighlightButton"
-            ReferencedContainer = "container:PSCellStyleHighlightButton.xcodeproj">
+            BuildableName = "PSCellStyleButton.app"
+            BlueprintName = "PSCellStyleButton"
+            ReferencedContainer = "container:PSCellStyleButton.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A5A532C51BEEC9C700559D41"
-            BuildableName = "PSCellStyleHighlightButton.app"
-            BlueprintName = "PSCellStyleHighlightButton"
-            ReferencedContainer = "container:PSCellStyleHighlightButton.xcodeproj">
+            BuildableName = "PSCellStyleButton.app"
+            BlueprintName = "PSCellStyleButton"
+            ReferencedContainer = "container:PSCellStyleButton.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A5A532C51BEEC9C700559D41"
-            BuildableName = "PSCellStyleHighlightButton.app"
-            BlueprintName = "PSCellStyleHighlightButton"
-            ReferencedContainer = "container:PSCellStyleHighlightButton.xcodeproj">
+            BuildableName = "PSCellStyleButton.app"
+            BlueprintName = "PSCellStyleButton"
+            ReferencedContainer = "container:PSCellStyleButton.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
