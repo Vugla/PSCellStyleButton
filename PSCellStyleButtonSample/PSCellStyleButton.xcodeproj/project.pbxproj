@@ -7,22 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A5DA91D91BEF503C00B7C844 /* PSCellStyleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DA91D41BEF503C00B7C844 /* PSCellStyleButton.swift */; };
-		A5DA91DA1BEF503C00B7C844 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DA91D51BEF503C00B7C844 /* ViewController.swift */; };
-		A5DA91DB1BEF503C00B7C844 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5DA91D61BEF503C00B7C844 /* Assets.xcassets */; };
-		A5DA91DC1BEF503C00B7C844 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5DA91D71BEF503C00B7C844 /* Info.plist */; };
-		A5DA91DD1BEF503C00B7C844 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DA91D81BEF503C00B7C844 /* AppDelegate.swift */; };
-		A5DA91E01BEF505600B7C844 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5DA91DE1BEF505600B7C844 /* Main.storyboard */; };
+		A5DA91E21BEF544900B7C844 /* PSCellStyleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DA91E11BEF544900B7C844 /* PSCellStyleButton.swift */; };
+		A5DA91ED1BEF55A600B7C844 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DA91EA1BEF55A600B7C844 /* ViewController.swift */; };
+		A5DA91EF1BEF55A600B7C844 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DA91EC1BEF55A600B7C844 /* AppDelegate.swift */; };
+		A5DA91F61BEF561600B7C844 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5DA91F41BEF561600B7C844 /* Main.storyboard */; };
+		A5DA91FB1BEF569600B7C844 /* rightArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = A5DA91F91BEF569600B7C844 /* rightArrow.png */; };
+		A5DA91FC1BEF569600B7C844 /* rightArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5DA91FA1BEF569600B7C844 /* rightArrow@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A5A532C61BEEC9C700559D41 /* PSCellStyleButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSCellStyleButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A5DA91D41BEF503C00B7C844 /* PSCellStyleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PSCellStyleButton.swift; path = PSCellStyleButton/PSCellStyleButton.swift; sourceTree = SOURCE_ROOT; };
-		A5DA91D51BEF503C00B7C844 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = PSCellStyleButton/ViewController.swift; sourceTree = SOURCE_ROOT; };
-		A5DA91D61BEF503C00B7C844 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = PSCellStyleButton/Assets.xcassets; sourceTree = SOURCE_ROOT; };
-		A5DA91D71BEF503C00B7C844 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = PSCellStyleButton/Info.plist; sourceTree = SOURCE_ROOT; };
-		A5DA91D81BEF503C00B7C844 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = PSCellStyleButton/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
-		A5DA91DF1BEF505600B7C844 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = PSCellStyleButton/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		A5DA91E11BEF544900B7C844 /* PSCellStyleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSCellStyleButton.swift; sourceTree = "<group>"; };
+		A5DA91EA1BEF55A600B7C844 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = SOURCE_ROOT; };
+		A5DA91EC1BEF55A600B7C844 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		A5DA91F51BEF561600B7C844 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		A5DA91F71BEF567200B7C844 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		A5DA91F91BEF569600B7C844 /* rightArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rightArrow.png; path = ../rightArrow.png; sourceTree = "<group>"; };
+		A5DA91FA1BEF569600B7C844 /* rightArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rightArrow@2x.png"; path = "../rightArrow@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,7 +40,10 @@
 		A5A532BD1BEEC9C700559D41 = {
 			isa = PBXGroup;
 			children = (
-				A5A532C81BEEC9C700559D41 /* PSCellStyleButton */,
+				A5DA91F91BEF569600B7C844 /* rightArrow.png */,
+				A5DA91FA1BEF569600B7C844 /* rightArrow@2x.png */,
+				A5DA91E11BEF544900B7C844 /* PSCellStyleButton.swift */,
+				A5A532C81BEEC9C700559D41 /* PSCellStyleButtonSample */,
 				A5A532C71BEEC9C700559D41 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,17 +56,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A5A532C81BEEC9C700559D41 /* PSCellStyleButton */ = {
+		A5A532C81BEEC9C700559D41 /* PSCellStyleButtonSample */ = {
 			isa = PBXGroup;
 			children = (
-				A5DA91DE1BEF505600B7C844 /* Main.storyboard */,
-				A5DA91D41BEF503C00B7C844 /* PSCellStyleButton.swift */,
-				A5DA91D51BEF503C00B7C844 /* ViewController.swift */,
-				A5DA91D61BEF503C00B7C844 /* Assets.xcassets */,
-				A5DA91D71BEF503C00B7C844 /* Info.plist */,
-				A5DA91D81BEF503C00B7C844 /* AppDelegate.swift */,
+				A5DA91F71BEF567200B7C844 /* Info.plist */,
+				A5DA91F41BEF561600B7C844 /* Main.storyboard */,
+				A5DA91EA1BEF55A600B7C844 /* ViewController.swift */,
+				A5DA91EC1BEF55A600B7C844 /* AppDelegate.swift */,
 			);
-			name = PSCellStyleButton;
+			name = PSCellStyleButtonSample;
 			path = PSCellStyleHighlightButton;
 			sourceTree = "<group>";
 		};
@@ -124,9 +126,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5DA91E01BEF505600B7C844 /* Main.storyboard in Resources */,
-				A5DA91DC1BEF503C00B7C844 /* Info.plist in Resources */,
-				A5DA91DB1BEF503C00B7C844 /* Assets.xcassets in Resources */,
+				A5DA91FB1BEF569600B7C844 /* rightArrow.png in Resources */,
+				A5DA91F61BEF561600B7C844 /* Main.storyboard in Resources */,
+				A5DA91FC1BEF569600B7C844 /* rightArrow@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,19 +139,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5DA91DD1BEF503C00B7C844 /* AppDelegate.swift in Sources */,
-				A5DA91DA1BEF503C00B7C844 /* ViewController.swift in Sources */,
-				A5DA91D91BEF503C00B7C844 /* PSCellStyleButton.swift in Sources */,
+				A5DA91E21BEF544900B7C844 /* PSCellStyleButton.swift in Sources */,
+				A5DA91ED1BEF55A600B7C844 /* ViewController.swift in Sources */,
+				A5DA91EF1BEF55A600B7C844 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A5DA91DE1BEF505600B7C844 /* Main.storyboard */ = {
+		A5DA91F41BEF561600B7C844 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A5DA91DF1BEF505600B7C844 /* Base */,
+				A5DA91F51BEF561600B7C844 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -193,6 +195,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -232,6 +235,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -244,7 +248,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = PSCellStyleButton/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pedja.PSCellStyleButton;
 				PRODUCT_NAME = PSCellStyleButton;
@@ -255,7 +259,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = PSCellStyleButton/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pedja.PSCellStyleButton;
 				PRODUCT_NAME = PSCellStyleButton;
