@@ -83,7 +83,7 @@ public class PSCellStyleButton: UIButton {
         if(showDisclosureIndicator){
             self.setImage(rightImage, forState: UIControlState.Normal)
             if((rightImage) != nil){
-                self.imageEdgeInsets = UIEdgeInsetsMake(0, self.frame.size.width - (rightImage!.size.width - imageRightInset), 0, 0);
+                self.imageEdgeInsets = UIEdgeInsetsMake(0, self.frame.size.width - (rightImage!.size.width + imageRightInset), 0, 0);
                 self.titleEdgeInsets = UIEdgeInsetsMake(0, titleLeftInset, 0, rightImage!.size.width);
             }
         }
