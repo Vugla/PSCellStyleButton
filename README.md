@@ -7,12 +7,12 @@ Copy PSCellStyleButton folder into your project
 <h3>Swift</h3></br>
 
 ```
-pod 'PSCellStyleButton'
+pod 'PSCellStyleButton', '~> 0.0.4'
 ```
 <h3>Objective-C</h3></br>
 
 ```
-pod 'PSCellStyleButton'
+pod 'PSCellStyleButton', '~> 0.0.4'
 use_frameworks!
 ```
 
