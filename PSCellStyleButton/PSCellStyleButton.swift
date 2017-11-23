@@ -23,14 +23,14 @@
 import UIKit
 
 func loadImage()->UIImage?{
-    if let image = (UIImage(named: "rightArrow")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)){
+    if let image = (UIImage(named: "rightArrow")?.withRenderingMode(UIImageRenderingMode.alwaysTemplate)){
         return image
     }
     
-    let testBundle = NSBundle(forClass: PSCellStyleButton.classForCoder())
-    if let bundlePath = testBundle.pathForResource("PSCellStyleButtonResources", ofType: "bundle"){
-        let bundle = NSBundle(path: bundlePath)
-        return UIImage(named: "rightArrow.png", inBundle: bundle, compatibleWithTraitCollection: nil)?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+    let testBundle = Bundle(for: PSCellStyleButton.classForCoder())
+    if let bundlePath = testBundle.path(forResource: "PSCellStyleButtonResources", ofType: "bundle"){
+        let bundle = Bundle(path: bundlePath)
+        return UIImage(named: "rightArrow.png", in: bundle, compatibleWith: nil)?.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
     }
     return nil
 }
@@ -45,12 +45,12 @@ public class PSCellStyleButton: UIButton {
     }
     public var showBottomLine:Bool = true{
         didSet {
-            self.setNeedsLayout()
+            bottomLine.isHidden = !showBottomLine
         }
     }
-    public var bottomLineColor:UIColor = UIColor.blackColor(){
+    public var bottomLineColor:UIColor = UIColor.black {
         didSet {
-            self.setNeedsLayout()
+            bottomLine.backgroundColor = bottomLineColor
         }
     }
     public var bottomLineHeight:CGFloat = 1.0{
@@ -85,10 +85,25 @@ public class PSCellStyleButton: UIButton {
         }
     }
     
+    private let bottomLine = UIView()
+    
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
+        commonInit()
+    }
+    
+    public required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        commonInit()
+    }
+    
+    private func commonInit() {
+        addSubview(bottomLine)
+    }
     
     override public func layoutSubviews() {
         super.layoutSubviews()
-        self.contentHorizontalAlignment = UIControlContentHorizontalAlignment.Left
+        self.contentHorizontalAlignment = UIControlContentHorizontalAlignment.left
         self.setupBottomLine()
         self.setupImage()
         
@@ -96,23 +111,25 @@ public class PSCellStyleButton: UIButton {
     
     func setupImage(){
         if(showDisclosureIndicator){
-            self.setImage(rightImage, forState: UIControlState.Normal)
+            self.setImage(rightImage, for: .normal)
             if((rightImage) != nil){
                 self.imageEdgeInsets = UIEdgeInsetsMake(0, self.frame.size.width - (rightImage!.size.width + imageRightInset), 0, 0);
                 self.titleEdgeInsets = UIEdgeInsetsMake(0, titleLeftInset, 0, rightImage!.size.width);
             }
+        } else {
+            self.setImage(nil, for: .normal)
         }
     }
     
     func setupBottomLine(){
-        if let oldLine = self.viewWithTag(100){
-            oldLine.removeFromSuperview()
-        }
         if(showBottomLine){
-            let line = UIView.init(frame: CGRect(x: bottomLineLeftInset, y: self.frame.size.height-bottomLineHeight, width: self.frame.size.width-bottomLineLeftInset-bottomLineRightInset, height: bottomLineHeight))
-            line.backgroundColor = bottomLineColor
-            line.tag = 100
-            self.addSubview(line)
+            bottomLine.isHidden = false
+            var frame = bottomLine.frame
+            frame = CGRect(x: bottomLineLeftInset, y: self.frame.size.height-bottomLineHeight, width: self.frame.size.width-bottomLineLeftInset-bottomLineRightInset, height: bottomLineHeight)
+            bottomLine.frame = frame
+            bottomLine.backgroundColor = bottomLineColor
+        } else {
+            bottomLine.isHidden = true
         }
     }
     

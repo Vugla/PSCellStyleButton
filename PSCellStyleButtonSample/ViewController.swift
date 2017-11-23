@@ -18,19 +18,13 @@ class ViewController: UIViewController {
        
         secondButton.showBottomLine = false;
         
-        thirdButton.bottomLineColor = UIColor.blackColor()
+        thirdButton.bottomLineColor = UIColor.black
         thirdButton.bottomLineLeftInset = 0.0
         thirdButton.bottomLineRightInset = 0.0
-        thirdButton.tintColor = UIColor.redColor()
-        thirdButton.setTitleColor(UIColor.blueColor(), forState: UIControlState.Normal)
-        thirdButton.backgroundColor = UIColor.magentaColor()
+        thirdButton.tintColor = UIColor.red
+        thirdButton.setTitleColor(UIColor.blue, for: .normal)
+        thirdButton.backgroundColor = UIColor.magenta
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
